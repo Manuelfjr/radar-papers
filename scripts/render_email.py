@@ -117,7 +117,7 @@ def render(issue):
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:640px">
   <tr><td style="padding:0 0 18px">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
-      <td style="font:700 26px/1 {SANS};letter-spacing:-.02em;color:{INK}"><span style="color:{ACCENT}">θ</span> Leituras θ</td>
+      <td style="font:700 26px/1 {SANS};letter-spacing:-.02em;color:{INK}">Leituras <span style="color:{ACCENT}">θ</span></td>
       <td align="right" style="font:12px {MONO};color:{MUTED}">nº {issue['number']:02d} · {fmt_date(issue['date'])}</td>
     </tr></table>
   </td></tr>
