@@ -9,6 +9,7 @@ Site estático, sem build e sem dependências.
 | `data/issues.json` | **Dados**: todas as edições, da mais nova para a mais antiga |
 | `CURADORIA.md` | Perfil, buscas e critérios usados pela rotina semanal. Edite para mudar o foco |
 | `scripts/arxiv_candidates.py` | Lista os candidatos recentes do arXiv |
+| `scripts/prune_issues.py` | Mantém só as 4 edições mais recentes no site |
 | `scripts/render_email.py` | Gera o e-mail (HTML com estilos inline + texto) de uma edição em `out/` |
 | `index.html`, `styles.css`, `app.js` | Site: edição atual, arquivo, busca e filtro por tag |
 

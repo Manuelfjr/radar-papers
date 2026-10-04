@@ -23,7 +23,7 @@ Buscas sugeridas na API do arXiv (`http://export.arxiv.org/api/query?search_quer
 - Prefira o que é **inovador ou surpreendente**: método novo, resultado que contraria o senso comum, benchmark ou ferramenta útil, crítica bem fundamentada. Evite incrementais e aplicações rotineiras.
 - `novelty` de 1 a 5: 5 = muda como se faz algo; 3 = contribuição sólida; 1 = só relevante pelo tema.
 - **Nunca invente** papers, IDs, autores ou resultados. Confira cada paper na página `arxiv.org/abs/<id>` e confirme que a data está na janela.
-- Não repita papers que já saíram em edições anteriores de `data/issues.json`.
+- Não repita papers que já saíram nas edições guardadas em `data/issues.json` (o site guarda só as 4 últimas).
 - Se a semana estiver fraca em `irt`, tudo bem incluir menos; não force.
 
 ## Texto (português do Brasil)
@@ -47,4 +47,6 @@ Buscas sugeridas na API do arXiv (`http://export.arxiv.org/api/query?search_quer
   ]
 }
 ```
-`id` e `date` = data da segunda-feira do envio. `number` = maior número existente + 1. Exatamente um paper com `section: "destaque"`.
+`id` e `date` = data da segunda-feira do envio. `number` = maior número existente + 1 (a numeração continua mesmo depois que edições antigas são apagadas). Exatamente um paper com `section: "destaque"`.
+
+Depois de adicionar a edição, rode `python3 scripts/prune_issues.py 4`: o site guarda só as 4 edições mais recentes e apaga as anteriores.
