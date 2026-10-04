@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leituras θ</title>
+<meta name="description" content="Toda segunda, uma seleção curta de papers novos sobre teoria de resposta ao item, psicometria para ML e avaliação de LLMs.">
+<meta property="og:title" content="Leituras θ">
+<meta property="og:description" content="Papers da semana em IRT, psicometria para ML e avaliação de LLMs, com o resumo e o porquê de cada um.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="#/">
+      <svg width="46" height="46" viewBox="0 0 46 46" aria-hidden="true">
+        <rect x="0.5" y="0.5" width="45" height="45" rx="10" fill="var(--surface)" stroke="var(--line)"/>
+        <path d="M12 11h16a6 6 0 0 1 6 6v18H18a6 6 0 0 1-6-6z" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M18 19h10M18 24h10M18 29h6" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h1>Leituras θ</h1>
+        <p class="sub">Toda segunda, os papers novos que valem a leitura em teoria de resposta ao item, psicometria para ML e avaliação de LLMs.</p>
+      </div>
+    </a>
+    <div class="tools">
+      <label class="search"><span class="sr">Buscar em todas as edições</span>
+        <input id="q" type="search" placeholder="Buscar título, autor ou tag" autocomplete="off">
+      </label>
+      <button id="theme" class="icon-btn" type="button" aria-label="Alternar tema claro/escuro">◐</button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"><p class="loading">Carregando edições…</p></main>
+
+  <footer>
+    <span>Curadoria semanal feita por Claude a partir do arXiv. Confira sempre o paper original.</span>
+    <a href="https://manuelfjr.github.io/radar-conferencias/">Radar θ de Conferências →</a>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
